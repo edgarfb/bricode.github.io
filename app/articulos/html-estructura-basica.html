@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Estructura básica HTML5</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Estructura basica HTML5,  Autor: Edgarf Fernando Britez, Categorias: HTML,CSS,JavaScript,FrontEnd developer,diseño web,desarrollo web">
+	<meta name="keywords" content="HTML,CSS,JavaScript,FrontEnd developer,diseño web,desarrollo web">
+	<meta name="author" content="Edgar Fernado Britez">
+	<link rel="stylesheet" href="../css/normalize.css">
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,700italic,700,400italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Orbitron:400,900,700,500' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="../fonts/font-awesome-4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/style.css">
+
+
+</head>
+<body>
+
+	<main id="main" role="main">
+
+	<nav id="navBar" class="row">
+		<div class="col-3" id="home-icon">
+			<a href="../index.html" class="fa fa-home"></a>
+		</div>
+		<div id="logo" class="col-6">
+			<h1>
+				<a href="../index.html">BRI<span class="fa fa-share-alt"></span><span class="span-code">ODE</span>
+				</a>
+			</h1>
+		</div>
+		<div class="col-3" id="bars-icon">
+			<span class="fa fa-bars"></span>
+		</div>
+		<ul id="navBar-ul" class="col-3">
+            <li><a href="../articulos.html"  id="secciones">SECCIONES</a></li>
+            <li><a href="../perfil.html"  id="perfil">PERFIL</a></li>
+		</ul>
+
+
+    </nav>
+
+	<ul id="navBar-Desplegable" class="col-3">
+		<li><a href="../articulos.html">ARTICULOS</a></li>
+		<li><a href="../perfil.html"  id="perfil">PERFIL</a></li>
+	</ul>
+
+	<!-- FIN NAV BAR DESKTOP FOR TABLET AND PHONE -->
+
+		<header id="cabecera" class="row">
+			<h2><span>FrontEnd</span> Developer Jr.</h2>
+		</header>
+
+		<section id="resumen-articulo" class="row">
+
+			<!-- PRIMER ARTICULO -->
+
+			<article class="articulo">
+				<div class="articulo-datos">
+					<header>
+						<p class="fecha"><time datetime="11 de Junio, 2016" itemprop="datosPublicacion">11 de Junio, 2016</time></p>
+						<h1><a href="html-estructura-basica.html">Html5: estructura básica del sitio.</a></h1>
+						<p>Por <a href="../perfil.html">Edgar F. Britez</a></p>
+					</header>
+					<br>
+					<article class="articulo-contenido">
+						<p>
+                            Como primer articulo les quería compartir el
+                            código html en su versión <a href="https://developer.mozilla.org/es/docs/HTML/HTML5">HTML5</a>,
+							de los contenedores básicos qu he utilizado para este sitio.
+                            <br>
+                            Empecemos por lo mas sencillo y  vamos agregando tags poco a poco.
+                            <br>
+                            La idea es que el sitio sea <a href="http://www.w3schools.com/css/css_rwd_intro.asp">RESPONSIVE</a> así que tomaremos como punto de
+                            partida la versión para móviles(MOBILE FIRST).
+						</p>
+						<br>
+						<h3>Vamos con el HEAD</h3>
+						<br>
+
+                        <div class="imgContenido">
+                        	<!-- <img src="../img/art-html-basico1.png" alt="Doctype, head"> -->
+							<p class="bgCodigo">&lt;!DOCTYPE html&gt;</p>
+							<p class="bgCodigo">&lt;<span class="rojo">html</span> <span class="verde">lang</span>=&quot;es&quot;&gt;<span class="rojo"></span></p>
+							<p class="bgCodigo tabLeft-1">&lt;<span class="rojo">head</span>&gt;<span class="rojo"></span></p>
+							<p class="bgCodigo tabLeft-2">&lt;<span class="rojo">meta</span> <span class="verde">charset</span>=&quot;UTF-8&quot;&gt;<span class="rojo"></span></p>
+							<p class="bgCodigo tabLeft-2">&lt;<span class="rojo">title</span>&gt;Brico/Index&lt;/<span class="rojo">title</span>&gt;<span class="rojo"></span></p>
+							<p class="bgCodigo tabLeft-2">&lt;<span class="rojo">meta</span> <span class="verde">name</span>=&quot;viewport&quot; <span class="verde">content</span>=&quot;width=device-width, initial-scale=1.0&quot;&gt;<span class="rojo"></span></p>
+							<p class="bgCodigo tabLeft-2">&lt;<span class="rojo">link</span> <span class="verde">rel</span>=&quot;stylesheet&quot; <span class="verde">href</span>=&quot;css/normalize.css&quot;&gt;<span class="rojo"></span></p>
+							<p class="bgCodigo tabLeft-2">&lt;<span class="rojo">link</span> <span class="verde">rel</span>=&quot;stylesheet&quot; <span class="verde">href</span>=&quot;css/style.css&quot;&gt;<span class="rojo"></span></p>
+							<p class="bgCodigo tabLeft-1">&lt;/<span class="rojo">head</span>&gt;<span class="rojo"></span></p>
+
+                        </div>
+						<br>
+						<p>Es importante que se incluya en el HEAD la etiqueta <a href="http://www.htmlcinco.com/etiqueta-meta-viewport-web-movil/">meta viewport</a>.</p>
+						<br>
+						<p class="bgCodigo"><span><</span><span class="rojo">meta</span> <span class="verde">name</span>="viewport" <span class="verde">content</span>="width= device-width, initial-scale=1.0"<span>></span></p>
+						<br>
+						<h3>BODY</h3><br>
+						<p>El cuerpo se compone, en este caso las nuevas etiquetas de <a href="https://developer.mozilla.org/es/docs/HTML/HTML5">HTML5</a>.</p>
+						<br>
+
+						<div class="codigo">
+							<p class="bgCodigo">&lt;<span class="rojo">main</span> <span class="verde">id</span>=&quot;container&quot; <sprolean class="verde"></span>=&quot;main&quot;&gt;</p>
+							<p class="bgCodigo tabLeft-1">	&lt;<span class="rojo">nav</span> <span class="verde">id</span>=&quot;navBar&quot;&gt;</p>
+							<p class="bgCodigo tabLeft-2">&lt;<span class="rojo">h1</span>&gt;NOMBRE DEL SITIO&lt;/<span class="rojo">h1</span>&gt;</p>
+							<p class="bgCodigo tabLeft-1">&lt;/<span class="rojo">nav</span>&gt;</p>
+							<p class="bgCodigo tabLeft-1">&lt;<span class="rojo">header</span> <span class="verde">id</span>=&quot;cabecera&quot;&gt;</p>
+							<p class="bgCodigo tabLeft-2">&lt;<span class="rojo">h2</span>&gt;TITULO&lt;/<span class="rojo">h2</span>&gt;</p>
+							<p class="bgCodigo tabLeft-1">&lt;/<span class="rojo">header</span>&gt;</p>
+							<p class="bgCodigo tabLeft-1">&lt;<span class="rojo">section</span> <span class="verde">id</span>=&quot;principal&quot;&gt;</p>
+							<p class="bgCodigo tabLeft-1">&lt;/<span class="rojo">section</span>&gt;</p>
+							<p class="bgCodigo tabLeft-1">&lt;<span class="rojo">footer</span> <span class="verde">id</span>=&quot;pie&quot;&gt;</p>
+							<p class="bgCodigo tabLeft-1">&lt;/<span class="rojo">footer</span>&gt;</p>
+							<p class="bgCodigo">&lt;/<span class="rojo">main</span>&gt;</p>
+						</div>
+							<br><br>
+							<p>Esta es la estructura html básica.</p>
+							<p>En el próximo articulo vamos a posicionar y dar estilos con CSS.</p>
+							<p>Espero les sirva, cualquier pregunta o sugerencia por favor compartanlas conmigo.</p>
+							<p>Por ahora mande los mensaje via <a href="https://twitter.com/intent/tweet?screen_name=bricodeOK"  data-related="bricodeOK">@bricodeOK</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+								o por <a href="mailto:edgarfbritez@gmail.com">correo.</a></p>
+							<br>
+							<p>Hasta pronto.</p>
+
+					</article>
+
+					<section id="comentarios">
+						<div id="disqus_thread"></div>
+<script>
+/**
+* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+
+s.src = '//bricodeazurewebsitesnet.disqus.com/embed.js';
+
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+					</section>
+
+					<footer class="articulo-pie">
+						<a href="https://twitter.com/share" class="twitter-share-button" data-via="bricodeOK" data-lang="es" data-size="large">Twittear</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></li>
+					</footer>
+				</div>
+			</article>
+			<br>
+
+
+		</section>
+
+		<aside id="recursos">
+			<h3>RECURSOS</h3>
+				<li>DONDE APRENDER</li>
+					<ul class="aprender">
+						<li><a href="https://www.codecademy.com/es">CODECADEMY</a></li>
+						<li><a href="https://es.khanacademy.org/">KHAN ACADEMY</a></li>
+						<li><a href="http://www.w3schools.com/">W3SCHOOL(ingles)</a></li>
+					</ul>
+				<li>DISEÑO</li>
+					<ul id="disenio">
+						<li><a href="https://www.google.com/fonts">GOOGLE FONTS(fuentes)</a></li>
+						<li><a href="http://fontawesome.io/">FONT AWESOME(iconos)</a></li>
+						<li><a href="https://color.adobe.com/es/">ADOBE COLOR(colores)</a></li>
+					</ul>
+				<li>DESARROLLO</li>
+					<ul id="desarrollo">
+						<li><a href="https://atom.io/">ATOM(editor)</a></li>
+						<li><a href="https://www.apachefriends.org/es/
+">XAMPP(servidor)</a></li>
+						<li><a href="https://git-scm.com/book/es/v1">GIT</a></li>
+						<li><a href="http://sass-lang.com/">SASS</a></li>
+					</ul>
+			</ul>
+		</aside>
+
+				<!--Inicio de footer-->
+		<footer id="contacto" class="clear row">
+			<p>04-06-2016, <a href="#"> Edgar F. Britez</a><br>
+			La Paternal, Ciudad Autonoma de Bs As, Argentina</p>
+			<p id="redes-bricode">
+				<a href="https://twitter.com/bricodeOK" target="_blank" class="fa fa-twitter-square"></a>
+				<a href="https://github.com/britecno" target="_blank" class="fa fa-github-square"></a>
+				<a href="https://ar.linkedin.com/in/edgar-fernando-britez-7a634baa" target="_blank" class="fa fa-linkedin-square"></a>
+			</p>
+
+			<!-- <aside class="col-6">
+				<form name="miForm" class="row" action="sendmail.php" method="post">
+					<label for="name">Nombre:</label>
+					<input id="nombre" type="text" name="nombre">
+					<label for="correo">E-mail:</label>
+					<input id="correo" type="email" name="correo">
+					<label for="mensaje">Mensaje:</label>
+					<textarea id="mensaje" rows="3" name="mensaje"></textarea>
+					<input name="enviar" id="enviar" type="submit" value="Enviar">
+				</form>
+			</aside> -->
+		</footer>
+				<!--fin de porfolio-->
+	</main>
+	<script src="../js/jquery-2.2.3.min.js"></script>
+    <script src="../js/script.js"></script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Posisionar elementos con CSS</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Posisionar elementos con css">
+	<meta name="keywords" content="HTML,CSS,JavaScript,FrontEnd developer,diseño web,desarrollo web,Posisionar elementos con css">
+	<meta name="author" content="Edgar Fernado Britez">
+	<link rel="stylesheet" href="../css/normalize.css">
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,700italic,700,400italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Orbitron:400,900,700,500' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="../fonts/font-awesome-4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/style.css">
+
+
+</head>
+<body>
+
+	<main id="main" role="main">
+
+	<nav id="navBar" class="row">
+		<div class="col-3" id="home-icon">
+			<a href="../index.html" class="fa fa-home"></a>
+		</div>
+		<div id="logo" class="col-6">
+			<h1>
+				<a href="../index.html">BRI<span class="fa fa-share-alt"></span><span class="span-code">ODE</span>
+				</a>
+			</h1>
+		</div>
+		<div class="col-3" id="bars-icon">
+			<span class="fa fa-bars"></span>
+		</div>
+		<ul id="navBar-ul" class="col-3">
+            <li><a href="../articulos.html"  id="secciones">SECCIONES</a></li>
+            <li><a href="../perfil.html"  id="perfil">PERFIL</a></li>
+		</ul>
+
+
+    </nav>
+
+	<ul id="navBar-Desplegable" class="col-3">
+		<li><a href="../articulos.html">ARTICULOS</a></li>
+		<li><a href="../perfil.html"  id="perfil">PERFIL</a></li>
+	</ul>
+
+	<!-- FIN NAV BAR DESKTOP FOR TABLET AND PHONE -->
+
+		<header id="cabecera" class="row">
+			<h2><span>FrontEnd</span> Developer Jr.</h2>
+		</header>
+
+		<section id="resumen-articulo" class="row">
+
+			<!-- PRIMER ARTICULO -->
+
+			<article class="articulo">
+				<div class="articulo-datos">
+					<header>
+						<p class="fecha"><time datetime="11 de Junio, 2016" itemprop="datosPublicacion">19 de Junio, 2016</time></p>
+						<h2><a href="posisionar-elementos-con-css.html">Posisionar elementos con CSS</a></h2>
+						<p>Por <a href="../perfil.html">Edgar F. Britez</a></p>
+					</header>
+					<br>
+					<article class="articulo-contenido">
+						<p>Vamos a posisionar los contenedores principales usando CSS, para un sitio web sensillo.</p>
+						<p>Para esto vamos a utilizar laspropiedades <a href="http://librosweb.es/referencia/css/float.html">FLOAT</a>
+						y <a href="http://librosweb.es/referencia/css/clear.html">CLEAR</a> de
+						<a href="http://librosweb.es/libro/css/">CSS</a>(acá les dejo un sitio
+						en donde pueden encontrar una ecxelente introcción a Css).</p>
+						<p>Este seria el resultado final.</p>
+						<p></p>
+						<br><br>
+
+						<div class="img-resultado">
+							<img src="../img/posElCss.png" alt="Posisionar elementos con css">
+						</div>
+						<br><br>
+						<p>El secreto es utilizar mediadas relativas(en este caso el %) para dividir los elementos.</p>
+
+					</article>
+
+					<section id="comentarios">
+						<div id="disqus_thread"></div>
+<script>
+/**
+* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+
+s.src = '//bricodeazurewebsitesnet.disqus.com/embed.js';
+
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+					</section>
+
+					<footer class="articulo-pie">
+						<a href="https://twitter.com/share" class="twitter-share-button" data-via="bricodeOK" data-lang="es" data-size="large">Twittear</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></li>
+					</footer>
+				</div>
+			</article>
+			<br>
+
+
+		</section>
+
+		<aside id="recursos">
+			<h3>RECURSOS</h3>
+				<li>DONDE APRENDER</li>
+					<ul class="aprender">
+						<li><a href="https://www.codecademy.com/es">CODECADEMY</a></li>
+						<li><a href="https://es.khanacademy.org/">KHAN ACADEMY</a></li>
+						<li><a href="http://www.w3schools.com/">W3SCHOOL(ingles)</a></li>
+					</ul>
+				<li>DISEÑO</li>
+					<ul id="disenio">
+						<li><a href="https://www.google.com/fonts">GOOGLE FONTS(fuentes)</a></li>
+						<li><a href="http://fontawesome.io/">FONT AWESOME(iconos)</a></li>
+						<li><a href="https://color.adobe.com/es/">ADOBE COLOR(colores)</a></li>
+					</ul>
+				<li>DESARROLLO</li>
+					<ul id="desarrollo">
+						<li><a href="https://atom.io/">ATOM(editor)</a></li>
+						<li><a href="https://www.apachefriends.org/es/
+">XAMPP(servidor)</a></li>
+						<li><a href="https://git-scm.com/book/es/v1">GIT</a></li>
+						<li><a href="http://sass-lang.com/">SASS</a></li>
+					</ul>
+			</ul>
+		</aside>
+
+				<!--Inicio de footer-->
+		<footer id="contacto" class="clear row">
+			<p>04-06-2016, <a href="#"> Edgar F. Britez</a><br>
+			La Paternal, Ciudad Autonoma de Bs As, Argentina</p>
+			<p id="redes-bricode">
+				<a href="https://twitter.com/bricodeOK" target="_blank" class="fa fa-twitter-square"></a>
+				<a href="https://github.com/britecno" target="_blank" class="fa fa-github-square"></a>
+				<a href="https://ar.linkedin.com/in/edgar-fernando-britez-7a634baa" target="_blank" class="fa fa-linkedin-square"></a>
+			</p>
+
+			<!-- <aside class="col-6">
+				<form name="miForm" class="row" action="sendmail.php" method="post">
+					<label for="name">Nombre:</label>
+					<input id="nombre" type="text" name="nombre">
+					<label for="correo">E-mail:</label>
+					<input id="correo" type="email" name="correo">
+					<label for="mensaje">Mensaje:</label>
+					<textarea id="mensaje" rows="3" name="mensaje"></textarea>
+					<input name="enviar" id="enviar" type="submit" value="Enviar">
+				</form>
+			</aside> -->
+		</footer>
+				<!--fin de porfolio-->
+	</main>
+	<script src="../js/jquery-2.2.3.min.js"></script>
+    <script src="../js/script.js"></script>
+
+
+
+</body>
+</html>

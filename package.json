@@ -1,0 +1,28 @@
+{
+  "name": "bricode.github.io",
+  "version": "1.0.0",
+  "description": "Sitio personal creado en el club de programacion Julio Cortazar. Ganador del Interclub!!!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bricode/bricode.github.io.git"
+  },
+  "keywords": [
+    "bricode"
+  ],
+  "author": "Edgar Fernando Britez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bricode/bricode.github.io/issues"
+  },
+  "homepage": "https://github.com/bricode/bricode.github.io#readme",
+  "devDependencies": {
+    "browser-sync": "^2.14.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-serve": "^1.4.0"
+  }
+}
