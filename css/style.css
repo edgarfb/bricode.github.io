@@ -454,6 +454,8 @@ h1, h2 {
       overflow: hidden;
       padding: 1rem;
       border: 1px solid #ccc; }
+      #main #resumen-articulo .articulo div.articulo-datos header h1 a {
+        color: #505868; }
       #main #resumen-articulo .articulo div.articulo-datos h2 a {
         font-size: 1.3rem;
         color: #9DB63B !important; }
