@@ -165,7 +165,7 @@ h1, h2 {
     #principal #sobre-mi #imgPerfil img {
       margin: 0 auto;
       width: 150px;
-      border-radius: 50%;
+      border-radius: 20%;
       padding: 1rem;
       float: left; }
   #principal #info {
